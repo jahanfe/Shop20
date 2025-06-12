@@ -21,3 +21,4 @@ public class ApplicationDbContext :Microsoft.EntityFrameworkCore.DbContext
             .IsRequired(false) // ParentId is nullable
             .OnDelete(DeleteBehavior.Restrict); // Prevent cyclic deletion issues, or choose Cascade
     }
+}

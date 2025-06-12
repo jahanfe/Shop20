@@ -50,3 +50,5 @@ namespace WebApplication5.Repositories;
         {
             return await _context.Categories.AnyAsync(e => e.Id == id);
         }
+    }
+}
